@@ -1,3 +1,7 @@
 #CL
 
-- [ ] Dockerfile
+- [ ] Dockerfil
+
+- [ ] copy
+
+- [ ] gite

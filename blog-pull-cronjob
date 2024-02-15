@@ -1,0 +1,2 @@
+* * * * * sh /home/name/code/s-blog/pull.sh >> /home/name/code/s-blog/pull.log 2>&1
+# new crontab file is missing newline before EOF, can't install.
