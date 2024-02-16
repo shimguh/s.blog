@@ -10,5 +10,6 @@ RUN git clone https://github.com/shimguh/s.blog.git /var/www/html
 
 COPY pull.sh /var/www/html
 COPY blog-pull-cronjob /etc/cron.d
+RUN crontab /etc/cron.d/blog-pull-cronjob
 
 CMD service cron start;nginx -g 'daemon off;'
