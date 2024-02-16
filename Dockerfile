@@ -5,10 +5,10 @@ RUN apt install -y nginx
 RUN apt install -y git
 RUN apt install cron
 
-RUN rm -rf /var/www
-RUN git clone https://github.com/shimguh/s.blog.git /var/www
+RUN rm -rf /var/www/html
+RUN git clone https://github.com/shimguh/s.blog.git /var/www/html
 
-COPY pull.sh /var/www/
+COPY pull.sh /var/www/html
 COPY blog-pull-cronjob /etc/cron.d
 
 RUN service cron start
